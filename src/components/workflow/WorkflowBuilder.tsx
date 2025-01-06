@@ -416,13 +416,11 @@ export default function WorkflowBuilder(): JSX.Element {
             Dual Workflow Builder
           </h1>
 
-
           <p className={`text-neutral-400 max-w-lg mx-auto mb-6 text-base md:text-lg text-center relative z-10 leading-relaxed ${start ? 'animate-buttonVanishAnimation' : 'animate-none'
             }`}>
             Use natural language to build workflows that analyze your marketing data.
             Watch as your query translates into actionable insights in real-time.
           </p>
-
 
           <button
             onClick={handleStart}
@@ -477,13 +475,13 @@ export default function WorkflowBuilder(): JSX.Element {
               </div>
 
 
-              <button
+              {/* <button
                 onClick={() => setShowAddNodeDialog(true)}
                 className="absolute bottom-20 right-4 p-2 rounded-full bg-teal-500 hover:bg-teal-600 text-white transition-colors duration-200"
                 title="Add new node"
               >
                 <PlusCircle size={24} />
-              </button>
+              </button> */}
             </div>
           )}
         </div>
