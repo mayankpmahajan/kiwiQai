@@ -6,21 +6,17 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts"
 import {
   ReactFlow,
   Background,
-  Controls,
   MiniMap,
   useNodesState,
   useEdgesState,
   addEdge,
-  Connection,
   MarkerType,
   OnConnect,
   useReactFlow,
-  ReactFlowProvider,
   BuiltInNode
 } from '@xyflow/react';
 import "@xyflow/react/dist/style.css";
 import { CustomNode } from "@/components/CustomNode";
-import { AddNodeButton } from "@/components/AddNodeButton";
 import { NodeDialog } from "@/components/NodeDialog";
 import { PlusCircle } from "lucide-react";
 
@@ -82,16 +78,6 @@ export default function WorkflowBuilder(): JSX.Element {
     // setShowAddNodeDialog(true);
   }, []);
 
-  // const onConnect = useCallback(
-  //   (params: Connection) => setEdges((eds) => addEdge({
-  //     ...params,
-  //     type: 'smoothstep',
-  //     animated: true,
-  //     style: { stroke: '#5eead4' },
-  //     markerEnd: { type: MarkerType.ArrowClosed, color: '#5eead4' },
-  //   }, eds)),
-  //   [setEdges]
-  // );
 
   const onConnect: OnConnect = useCallback(
     (connection) => setEdges((edges) => addEdge(connection, edges)),
