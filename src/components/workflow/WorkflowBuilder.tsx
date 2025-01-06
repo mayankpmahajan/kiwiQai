@@ -491,22 +491,22 @@ export default function WorkflowBuilder(): JSX.Element {
 
             <div className="w-full max-w-4xl top-[20vh]">
 
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 ">
                 <Card className="p-4 bg-neutral-800/50 backdrop-blur-sm border-neutral-700">
                   <h3 className="text-teal-400 text-sm font-medium">Engagement Rate</h3>
-                  <p className="text-2xl font-bold mt-2">{stats.engagementRate}%</p>
+                  <p className="text-2xl font-bold mt-2 text-white">{stats.engagementRate}%</p>
                 </Card>
                 <Card className="p-4 bg-neutral-800/50 backdrop-blur-sm border-neutral-700">
                   <h3 className="text-teal-400 text-sm font-medium">Click-Through Rate</h3>
-                  <p className="text-2xl font-bold mt-2">{stats.clickThroughRate}%</p>
+                  <p className="text-2xl font-bold mt-2 text-white">{stats.clickThroughRate}%</p>
                 </Card>
                 <Card className="p-4 bg-neutral-800/50 backdrop-blur-sm border-neutral-700">
                   <h3 className="text-teal-400 text-sm font-medium">Conversions</h3>
-                  <p className="text-2xl font-bold mt-2">{stats.conversions}</p>
+                  <p className="text-2xl font-bold mt-2 text-white">{stats.conversions}</p>
                 </Card>
                 <Card className="p-4 bg-neutral-800/50 backdrop-blur-sm border-neutral-700">
                   <h3 className="text-teal-400 text-sm font-medium">Growth</h3>
-                  <p className="text-2xl font-bold mt-2">+{stats.growth}%</p>
+                  <p className="text-2xl font-bold mt-2 text-white">+{stats.growth}%</p>
                 </Card>
               </div>
 
