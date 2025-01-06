@@ -74,13 +74,43 @@ const config: Config = {
             transform: 'translateY(0) scale(1)',
             filter: 'blur(0px)'
           }
-        }
+        },
+        slideLeft: {
+          '0%': { 
+            opacity: '1',
+            transform: 'translateX(0) scale(1)',
+            filter: 'blur(0px)'
+          },
+          '100%': {
+            opacity: '0',
+            transform: 'translateX(-100px) scale(0.95)',
+            filter: 'blur(4px)'
+          }
+        },
+        slideInFromLeft: {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateX(100px) scale(0.95)',
+            filter: 'blur(4px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0) scale(1)',
+            filter: 'blur(0px)'
+          }
+        },
+
       },
+      
+  
     animation: {
       titleToTopAnimation: 'titleToTop 3s ease-in-out forwards',
       inputToBottomAnimation: 'inputToBottom 1s ease-in-out forwards',
       buttonVanishAnimation: 'buttonVanish 0.5s ease-out forwards',
       slideIn: 'slideIn 2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+      slideLeft: 'slideLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+      slideInFromLeft: 'slideInFromLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards'
+      
 
     },
     colors: {
